@@ -4,11 +4,22 @@
              xmlns:local="clr-namespace:App.Essentials"
              x:Class="App.Essentials.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.ColumnSpan="2" x:Name="LabelX"/>
+            <Label Grid.Row="1" Grid.ColumnSpan="2" x:Name="LabelY"/>
+            <Label Grid.Row="2" Grid.ColumnSpan="2" x:Name="LabelZ"/>
+
+            <Button Grid.Row="3" Grid.Column="0" Text="Start" x:Name="Start" Clicked="Start_Clicked"/>
+            <Button Grid.Row="3" Grid.Column="1" Text="Stop" x:Name="Stop" Clicked="Stop_Clicked"/>
+        </Grid>
+        
+        
+    </ContentPage.Content>
 
 </ContentPage>
