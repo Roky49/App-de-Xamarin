@@ -2,24 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App.Essentials"
-             x:Class="App.Essentials.MainPage">
+             x:Class="App.Essentials.MainPage"
+             x:Name="color">
 
-    <ContentPage.Content>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" Grid.ColumnSpan="2" x:Name="LabelX"/>
-            <Label Grid.Row="1" Grid.ColumnSpan="2" x:Name="LabelY"/>
-            <Label Grid.Row="2" Grid.ColumnSpan="2" x:Name="LabelZ"/>
 
-            <Button Grid.Row="3" Grid.Column="0" Text="Start" x:Name="Start" Clicked="Start_Clicked"/>
-            <Button Grid.Row="3" Grid.Column="1" Text="Stop" x:Name="Stop" Clicked="Stop_Clicked"/>
-        </Grid>
+
+    <AbsoluteLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+        <Label FontSize="30" x:Name="Label" TextColor="White"/>
+       
+            
+            
+            
+        </AbsoluteLayout>
+
+
+
+
+
+       
         
         
-    </ContentPage.Content>
+    
 
 </ContentPage>
