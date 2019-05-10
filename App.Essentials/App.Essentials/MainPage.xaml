@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:App.Essentials"
              x:Class="App.Essentials.MainPage"
              x:Name="color">
+    
 
 
 
@@ -11,19 +12,7 @@
     <AbsoluteLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
 
         <Label FontSize="30" x:Name="Label" TextColor="White"/>
-       
-            
-            
-            
-        </AbsoluteLayout>
-
-
-
-
-
-       
-        
-        
-    
+  
+     </AbsoluteLayout>
 
 </ContentPage>
